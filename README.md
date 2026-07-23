@@ -3,7 +3,8 @@
 사원들이 **이 repo 하나만 추가**하면 사내 플러그인들을 설치할 수 있습니다. 앞으로 플러그인이 늘어나면
 [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json) 의 `plugins` 배열에 항목만 추가하면 됩니다.
 
-> 📘 **가이드** — [초기 세팅 (관리자·개발자용)](SETUP.md) · [사용 가이드 (사원용)](USAGE.md)
+> 📘 **관리자 가이드** — [초기 세팅 (SETUP.md)](SETUP.md)
+> 각 플러그인의 **사용법**(예: `/sql-setup`, `/sql-query`)은 해당 플러그인 repo에서 관리합니다 → [sql-builder-plugin](https://github.com/cv3-ax/sql-builder-plugin).
 
 - private repo이므로 사용자 GitHub 계정에 **SSH 공개키 등록** + `cv3-ax` 조직 **read 권한**이 필요합니다.
   (이 마켓플레이스 repo와, 각 플러그인 소스 repo 양쪽에 read 필요 — 둘 다 cv3-ax 조직이라 팀 read면 충족)

@@ -1,6 +1,6 @@
 # 초기 세팅 가이드 (관리자·개발자용)
 
-`sql-builder` 플러그인을 사내에 배포하기 위한 **1회 세팅**입니다. 각 PC 설치·사용은 [USAGE.md](USAGE.md) 참고.
+플러그인을 사내에 배포하기 위한 **마켓플레이스 1회 세팅**입니다. (개별 플러그인 사용법은 각 플러그인 repo 참고 — 예: [sql-builder-plugin](https://github.com/cv3-ax/sql-builder-plugin))
 
 ## 구조
 ```
@@ -26,7 +26,7 @@ cv3-ax/cv3-tools             조직 마켓플레이스 = 사원 진입점  ← �
 → 이후 팀원은 자기 PC의 SSH 키만 GitHub 계정에 등록하면 자동으로 접근됩니다.
 
 ## 2. 각 PC 설치 (개발자가 도움)
-자세한 절차는 [USAGE.md](USAGE.md). 요약:
+마켓플레이스 추가 + 플러그인 설치. 요약:
 ```
 git config --global url."git@github.com:".insteadOf "https://github.com/"
 /plugin marketplace add git@github.com:cv3-ax/cv3-tools.git
