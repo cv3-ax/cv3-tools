@@ -4,15 +4,17 @@
 
 1. **bot 계정 등록(전역 최초 1회)** — 사내 GitHub bot(서비스) 계정을 `cv3-ax` 조직에 **read** 로 추가.
 2. **bot에 SSH 키 등록(전역 최초 1회)** — 그 PC의 SSH 공개키를 bot 계정 GitHub에 등록.
-3. Claude Code에서 **(pc당 1회)**:
-   마켓플레이스 등록
-   ```
-   /plugin marketplace add git@github.com:cv3-ax/cv3-tools.git
-   ```
-   플러그인 설치 예시
-   ```
-   /plugin install sql-builder@cv3-tools
-   ```
+3. pc에 `.ssh/`에 bot등록한 SSH 개인 키 세팅 **(pc당 1회)**
+4. Claude Code에서:
+   
+      마켓플레이스 등록 **(pc당 1회)**
+      ```
+      /plugin marketplace add git@github.com:cv3-ax/cv3-tools.git
+      ```
+      플러그인 설치 예시 **(플러그인 추가시마다 1회)**
+      ```
+      /plugin install sql-builder@cv3-tools
+      ```
 
 > 💡 플러그인 소스(private)를 SSH로 받도록 한 번만: `git config --global url."git@github.com:".insteadOf "https://github.com/"`
 
