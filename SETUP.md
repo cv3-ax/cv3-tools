@@ -2,9 +2,9 @@
 
 ## 1. 마켓플레이스 사용법 (설치)
 
-1. **bot 계정 등록** — 사내 GitHub bot(서비스) 계정을 `cv3-ax` 조직에 **read** 로 추가.
-2. **bot에 SSH 키 등록** — 그 PC의 SSH 공개키를 bot 계정 GitHub에 등록.
-3. Claude Code에서:
+1. **bot 계정 등록(전역 최초 1회)** — 사내 GitHub bot(서비스) 계정을 `cv3-ax` 조직에 **read** 로 추가.
+2. **bot에 SSH 키 등록(전역 최초 1회)** — 그 PC의 SSH 공개키를 bot 계정 GitHub에 등록.
+3. Claude Code에서**(pc당 1회)**:
    ```
    /plugin marketplace add git@github.com:cv3-ax/cv3-tools.git
    /plugin install sql-builder@cv3-tools
