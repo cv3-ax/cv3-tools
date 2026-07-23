@@ -1,0 +1,16 @@
+{
+  "name": "cv3-tools",
+  "owner": {
+    "name": "CV3-AX"
+  },
+  "plugins": [
+    {
+      "name": "sql-builder",
+      "source": {
+        "source": "github",
+        "repo": "cv3-ax/sql-builder-plugin"
+      },
+      "description": "자연어 → 읽기 전용 SQL → CSV 추출 (MySQL). /sql-setup 으로 접속정보·스키마 등록 후 /sql-query 사용."
+    }
+  ]
+}
