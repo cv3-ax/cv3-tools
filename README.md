@@ -7,6 +7,6 @@
 
 ## 수록 플러그인
 
-| 플러그인 | 소스 | 설명 |
-|----------|------|------|
-| `sql-builder` | [`cv3-ax/sql-builder-plugin`](https://github.com/cv3-ax/sql-builder-plugin) | 자연어 → 읽기 전용 SQL → CSV (MySQL) |
+| 플러그인 | 버전 | 소스 | 설명 |
+|----------|------|------|------|
+| `sql-builder` | 1.0.3 | [`cv3-ax/sql-builder-plugin`](https://github.com/cv3-ax/sql-builder-plugin) | 자연어 → 읽기 전용 SQL → CSV (MySQL) |

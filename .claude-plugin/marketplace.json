@@ -3,9 +3,13 @@
   "owner": {
     "name": "CV3-AX"
   },
+  "metadata": {
+    "version": "1.1.0"
+  },
   "plugins": [
     {
       "name": "sql-builder",
+      "version": "1.0.3",
       "source": {
         "source": "github",
         "repo": "cv3-ax/sql-builder-plugin"
