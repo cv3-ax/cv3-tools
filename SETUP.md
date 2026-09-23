@@ -18,6 +18,13 @@
 
 > 💡 플러그인 소스(private)를 SSH로 받도록 한 번만: `git config --global url."git@github.com:".insteadOf "https://github.com/"`
 
+5. **업데이트 (새 버전이 공지될 때마다)**:
+   ```
+   /plugin marketplace update cv3-tools
+   ```
+   이후 `/plugin` → 설치된 `sql-builder` 선택 → **Update**. (터미널에서는 `claude plugin update sql-builder@cv3-tools`)
+   반영 후 Claude Code를 재시작하세요.
+
 ## 2. 마켓플레이스에 플러그인 등록법
 
 1. `.claude-plugin/marketplace.json` 의 `plugins` 에 추가:
@@ -29,3 +36,11 @@
    }
    ```
 2. **커밋 & 푸시** → 팀원들에게 **`/plugin marketplace update cv3-tools`** 실행하라고 전파.
+
+### 플러그인 새 버전 배포 시
+
+업데이트는 **버전 번호로만 감지**됩니다(커밋이 앞서가도 버전이 같으면 "already at the latest").
+
+1. 플러그인 repo에서 `.claude-plugin/plugin.json` 의 `version` 을 올려 main 에 머지.
+2. 이 repo `.claude-plugin/marketplace.json` 의 해당 플러그인 `version` 을 **같은 값으로** 맞추고 `metadata.version` 도 올림.
+3. 커밋 & 푸시 → 팀원들에게 위 **5. 업데이트** 절차 전파.
