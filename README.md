@@ -9,4 +9,4 @@
 
 | 플러그인 | 버전 | 소스 | 설명 |
 |----------|------|------|------|
-| `sql-builder` | 1.0.3 | [`cv3-ax/sql-builder-plugin`](https://github.com/cv3-ax/sql-builder-plugin) | 자연어 → 읽기 전용 SQL → CSV (MySQL) |
+| `sql-builder` | 1.0.4 | [`cv3-ax/sql-builder-plugin`](https://github.com/cv3-ax/sql-builder-plugin) | 자연어 → 읽기 전용 SQL → CSV (MySQL) |
